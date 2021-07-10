@@ -4,6 +4,8 @@ This project was created to display and learn useState hook in React
 
 Source: https://github.com/john-smilga/react-projects
 
+Live build: `birthday-reminder-nuru.netlify.app`
+
 ## Available Scripts
 
 In the project directory, you can run:
