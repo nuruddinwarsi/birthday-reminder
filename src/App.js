@@ -1,10 +1,16 @@
-import React from "react";
-
+import React, { useState } from "react";
+import birthdays from "./data";
+import List from "./List";
 const App = () => {
+  const [people, setPeople] = useState(birthdays);
   return (
-    <div>
-      <h1>BIRTHDAY REMINDER</h1>
-    </div>
+    <React.Fragment>
+      <section>
+        <h2>{`${people.length} Birthdays Today`}</h2>
+        <List people={people} />
+        <button onClick={() => setPeople([])}>Clear all</button>
+      </section>
+    </React.Fragment>
   );
 };
 
